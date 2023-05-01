@@ -1,0 +1,21 @@
+# Index of the text file containing fastq file names
+curr_file: 0
+curr_batch: "batch1"
+
+star_genomedir: "reference/star-2.7.5c_GRCh38.d1.vd1_gencode.v36"
+star_fasta: "reference/GRCh38.d1.vd1.fa"
+
+# Location of input files
+gtex_fqdir: "star/fastq"
+# Location of output files
+star_outdir: "star/output"
+
+# List of file names to be processed by the workflow
+sample_dict: {"batch1": ["input_list/gtexOV_fastq_batch1.aa.txt", "input_list/gtexOV_fastq_batch1.ab.txt"],
+              "batch2": ["input_list/gtexOV_fastq_batch2.aa.txt", "input_list/gtexOV_fastq_batch2.ab.txt"]}
+
+# Make sure to define necessary channels and dependencies
+# channels:
+#   - bioconda
+# dependencies:
+#   - python=3.10.8

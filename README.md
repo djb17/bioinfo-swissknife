@@ -3,7 +3,9 @@
 Directory structure:
 ```
 notes/
-|-- :construction:
+|-- [construction]
 scripts/
 |-- snp_array/   # References for analyzing Affymetrix and other SNP array data
+workflow/
+|-- [construction]
 ```
