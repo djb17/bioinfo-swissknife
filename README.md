@@ -2,10 +2,9 @@
 
 Directory structure:
 ```
-notes/
+bioinfo-swissknife/
+|--ml_helper/   # Helper functions for implementing ML models
+|--notes/       # Helpful notes for bioinformatics analyses
 |-- [construction]
-scripts/
-|-- snp_array/   # References for analyzing Affymetrix and other SNP array data
-workflow/
-|-- [construction]
+|--scripts/     # Various scripts for preprocessing/analyzing data
 ```
