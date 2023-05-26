@@ -155,9 +155,9 @@ rule gatk_lro:
 		logname = curr_outdir+"/{normal}.lro.log"
 	shell:
 		"""
-			# Learn read orientation model
-			{params.gatk_dir}/gatk --java-options \"-Xmx{params.mem} -Djava.io.tmpdir={params.tmp_dir}\" LearnReadOrientationModel \
-			-I {input.f1r2} -O {output.ro_mod} &> {params.logname}
+		# Learn read orientation model
+		{params.gatk_dir}/gatk --java-options \"-Xmx{params.mem} -Djava.io.tmpdir={params.tmp_dir}\" LearnReadOrientationModel \
+		-I {input.f1r2} -O {output.ro_mod} &> {params.logname}
 		"""
 
 # Rule for refining variant calls from MuTect2 using customizable thresholds
